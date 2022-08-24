@@ -186,14 +186,12 @@ header .gnav__list {
 
 #eyecatch {
 	position: relative;
-	/* top: -96px; */
 	height: 100vh;
 	min-height: 550px;
 }
 #eyecatch .fadein {
 	position: relative;
 	width: 100vw;
-	/* height: 52.22vw; */
 }
 #eyecatch .fadein img {
 	position: absolute;
@@ -256,7 +254,9 @@ header .gnav__list {
 @media screen and (max-width: 768px) {
 	#eyecatch .container {
 		top: 50%;
-		transform: translateY(-50%);
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%,-50%);
 		text-align: center;
 	}
 	#eyecatch .container h1 {
@@ -285,7 +285,6 @@ header .gnav__list {
 #concept .flexArea {
 	display: flex;
 	align-items: flex-start;
-	/* justify-content: space-between; */
 	max-width: 1000px;
 }
 #concept .flexArea .text {
@@ -321,10 +320,11 @@ header .gnav__list {
 		margin-bottom: 30px;
 	}
 	#concept .flexArea img {
-    width: 345px;
-    height: 150px;
-    object-fit: cover;
-    object-position: bottom;
+	width: 345px;
+	height: 150px;
+	margin: 0 auto;
+	object-fit: cover;
+	object-position: bottom;
 }
 }
 
@@ -407,7 +407,6 @@ header .gnav__list {
 	}
 	#service ul li {
 		width: 33.3%;
-		/* height: 22.22vw; */
 		height: 320px;
 	}
 	#service ul li a {
@@ -419,6 +418,12 @@ header .gnav__list {
 	}
 }
 @media (max-width: 768px) {
+	section#service {
+    padding: 100px 0 40px;
+	}
+	#service h2 {
+		padding-left: 15px;
+	}
 	#service ul li {
 		height: 66.67vw;
 	}
