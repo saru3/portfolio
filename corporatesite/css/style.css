@@ -5,9 +5,9 @@ body {
 a {
 	text-decoration: none;
 }
-button {
+a.btn {
 	font-weight: bold;
-	display: block;
+	display: flex;
 	width: 235px;
 	height: 59px;
 	margin: 0 auto;
@@ -16,8 +16,11 @@ button {
 	border-radius: 30px;
 	background: #F7D43F;
 	box-shadow: 0 0 6px #1B1310;
+	color: #171717;
+	justify-content: center;
+	align-items: center;
 }
-button:hover {
+a.btn:hover {
 	cursor: pointer;
 }
 section .inner {
@@ -344,7 +347,7 @@ header .gnav__list {
 	padding: 25px 20px;
 	letter-spacing: 0.05em;
 }
-#works button {
+#works a.btn {
 	margin-top: 80px;
 }
 @media (min-width: 769px) {
