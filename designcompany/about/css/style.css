@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.container {
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+.text {
+  line-height: 2;
+}
+.text span {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 1em;
+}
+@media screen and (max-width: 769px) {
+  .container {
+    padding: 0 4%;
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+
+#eyecatch {
+  height: 60vh;
+  min-height: 450px;
+}
+#eyecatch:after {
+  height: 60vh;
+}
+#eyecatch .container {
+	position: relative;
+	width: 76.4%;
+	height: 86%;
+	background: url(../img/heading-img.jpg) no-repeat;
+	background-position: center 0;
+	background-size: cover;
+}
+#eyecatch .subtitle {
+	font-weight: bold;
+	letter-spacing: 0.05em;
+}
+@media screen and (min-width: 769px) {
+  #eyecatch .wrap {
+    transform: translate(40%,-50%);
+  }
+  #eyecatch .title {
+    letter-spacing: 0.068em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #eyecatch .title {
+    font-size: 52px;
+  }
+}
+
+#vision {
+  padding: 120px 0;
+}
+#vision .sub_title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	letter-spacing: 0.005em;
+}
+@media screen and (min-width: 769px) {
+  #vision .container {
+    padding-left: 15.7vw;
+  }
+}
+
+section#message .container {
+  position: relative;
+  padding-top: 150px;
+}
+#message .wrap {
+  width: 70%;
+  background: #F0F0F0;
+  margin-left: auto;
+  padding: 10.91% 16.82% 8.18%;
+}
+#message .image {
+  width: 38.18%;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+@media screen and (max-width: 768px) {
+  #message .wrap {
+    width: 64.32vw;
+    padding: 23.42% 5.2% 14.87%;
+  }
+  #message .image {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #message .wrap {
+    width: 100%;
+  }
+  #message .image {
+    left: -4%;
+  }
+}
+
+#company {
+  padding: 120px 0;
+}
+#company .companyinfo {
+  border-top: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+#company .companuinfo__row {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  width: 72.73%;
+  margin-left: auto;
+}
+#company .companyinfo__title {
+  font-weight: bold;
+  width: 80px;
+  margin-right: 64px;
+}
+#company .ompanuinfo__text {
+  flex-grow: 1;
+}
+#company  iframe {
+  height: 360px;
+}

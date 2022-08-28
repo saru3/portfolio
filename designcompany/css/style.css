@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+#eyecatch {
+	height: 100vh;
+}
+#eyecatch .container {
+	position: relative;
+	width: 76.4%;
+	height: 86.5%;
+	background: url(../img/kv-img.jpg) no-repeat top left;
+	background-position: center 0;
+	background-size: cover;
+}
+#eyecatch .subtitle span {
+	display: block;
+}
+
+#about {
+	padding-top: 100px;
+	position: relative;
+}
+#about:after {
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	width: 100vw;
+	height: 160px;
+	content: '';
+	background-color: #F2F2F2;
+}
+#about .container {
+	background: url(../img/about-img.jpg) center / cover no-repeat;
+	padding: 110px 0 110px 50px;
+}
+#about .wrap {
+	max-width: 590px;
+	padding: 50px 30px;
+	background-color: rgba(255,255,255,0.95);
+}
+#about .wrap .text {
+	font-family: 'Noto Sans JP';
+	line-height: 2;
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+	#about .container {
+		padding-left: 0;
+	}
+	#about .wrap {
+		width: 92%;
+		margin: 0 auto;
+	}
+}
+
+#works_culture {
+	background-color: #F2F2F2;
+	padding: 0 5%;
+}
+#works_culture .container {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0 60px;
+}
+#works_culture .card {
+	width: 47.27%;
+}
+#works_culture .card img,
+#works_culture .card .text {
+	margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+	#works_culture .container {
+		flex-direction: column;
+	}
+	#works_culture .card {
+    width: 100%;
+    max-width: 520px;
+	}
+}
+
+#topics {
+	padding: 0 5%;
+}
+#topics .container {
+	padding: 60px 0;
+}
+#topics .topicslist {
+	max-width: 700px;
+	margin-left: auto;
+}
+#topics .topicslist__items {
+	border-bottom: 1px solid #DDD;
+	padding: 32px 0 12px;
+}
+#topics .topicslist__date {
+	font-size: 10px;
+	font-weight: bold;
+	margin-bottom: 13px;
+	letter-spacing: 0.015em;
+	color: #CECECE;
+}
+#topics .topicslist__text {
+	font-size: 14px;
+	letter-spacing: 0.004em;
+	color: #333;
+	font-weight: bold;
+}
+#topics .btn {
+	margin-top: 30px;
+	margin-left: auto;
+}
+
+#contact {
+	padding: 0 5%;
+	background-color: #F2F2F2;
+}
+#contact .container {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding: 60px 0 120px;
+}
+#contact .text {
+	line-height: 2;
+	margin-bottom: 30px;
+}
+#contact .textArea {
+	width: 40%;
+	max-width: 440px;
+}
+#contact .img {
+	width: 52.73%;
+	max-width: 580px;
+}
+@media screen and (max-width: 768px) {
+	#contact {
+		padding: 0 4%;
+	}
+	#contact .container {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	#contact .card {
+    width: 100%;
+    max-width: 520px;
+	}
+	#contact .img {
+		margin-bottom: 30px;
+	}
+}
