@@ -129,3 +129,19 @@ section#message .container {
 #company  iframe {
   height: 360px;
 }
+@media screen and (max-width: 768px) {
+  #company .companuinfo__row {
+    width: 95.76%;
+  }
+  #company  iframe {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #company .companuinfo__row {
+    width: 100%;
+  }
+  #company  iframe {
+    height: 470px;
+  }
+}
