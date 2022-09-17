@@ -409,7 +409,7 @@ header .gnav__list {
 		display: flex;
 	}
 	#service ul li {
-		width: 33.3%;
+		width: 33.33%;
 		height: 320px;
 	}
 	#service ul li a {
